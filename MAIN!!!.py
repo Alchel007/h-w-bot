@@ -316,7 +316,7 @@ def get_text_messages(message):
         btn1 = types.KeyboardButton('🔙 Главное меню')
         markup.add(btn1)
         bot.send_message(message.from_user.id,
-                         'Отправьте д/з в формате текста',
+                         'Д/З:',
                          reply_markup=markup, parse_mode='Markdown')
 
     elif message.text == 'Алг. База.':
